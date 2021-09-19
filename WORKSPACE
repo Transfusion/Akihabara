@@ -40,13 +40,31 @@ new_local_repository(
     path = "/path/to/unity/2020.3.8f1",
 )
 
+# mediapipe patched
+http_archive(
+    name = "com_google_mediapipe_patched",
+    strip_prefix = "mediapipe-0.8.6",
+    sha256 = "3fa1548474d8ef943361804a9f86a3edaa00b0976b9d58fd3b41092d339053c6",
+    patches = [
+        "@//third_party:proto_namespace.diff",
+        "@//third_party:mediapipe_opencv.diff",
+        "@//third_party:mediapipe_workaround.diff",
+        "@//third_party:mediapipe_visibility.diff",
+        "@//third_party:mediapipe_model_path.diff",
+        "@//third_party:mediapipe_extension.diff"
+    ],
+    patch_args = [
+        "-p1",
+    ],
+    urls = ["https://github.com/google/mediapipe/archive/v0.8.6.tar.gz"],
+)
+
 # mediapipe
 http_archive(
     name = "com_google_mediapipe",
     strip_prefix = "mediapipe-0.8.6",
     sha256 = "3fa1548474d8ef943361804a9f86a3edaa00b0976b9d58fd3b41092d339053c6",
     patches = [
-        "@//third_party:proto_namespace.diff",
         "@//third_party:mediapipe_opencv.diff",
         "@//third_party:mediapipe_workaround.diff",
         "@//third_party:mediapipe_visibility.diff",

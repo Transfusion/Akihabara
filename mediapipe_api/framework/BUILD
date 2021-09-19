@@ -75,7 +75,7 @@ csharp_proto_src(
     name = "calculator_cs",
     proto_src = "mediapipe/framework/calculator.proto",
     deps = [
-        "@com_google_mediapipe//mediapipe/framework:protos_src",
+        "@com_google_mediapipe_patched//mediapipe/framework:protos_src",
     ],
 )
 
@@ -83,7 +83,7 @@ csharp_proto_src(
     name = "calculator_options_cs",
     proto_src = "mediapipe/framework/calculator_options.proto",
     deps = [
-        "@com_google_mediapipe//mediapipe/framework:protos_src",
+        "@com_google_mediapipe_patched//mediapipe/framework:protos_src",
     ],
 )
 
@@ -91,7 +91,7 @@ csharp_proto_src(
     name = "mediapipe_options_cs",
     proto_src = "mediapipe/framework/mediapipe_options.proto",
     deps = [
-        "@com_google_mediapipe//mediapipe/framework:protos_src",
+        "@com_google_mediapipe_patched//mediapipe/framework:protos_src",
     ],
 )
 
@@ -99,7 +99,7 @@ csharp_proto_src(
     name = "packet_factory_cs",
     proto_src = "mediapipe/framework/packet_factory.proto",
     deps = [
-        "@com_google_mediapipe//mediapipe/framework:protos_src",
+        "@com_google_mediapipe_patched//mediapipe/framework:protos_src",
     ],
 )
 
@@ -107,7 +107,7 @@ csharp_proto_src(
     name = "packet_generator_cs",
     proto_src = "mediapipe/framework/packet_generator.proto",
     deps = [
-        "@com_google_mediapipe//mediapipe/framework:protos_src",
+        "@com_google_mediapipe_patched//mediapipe/framework:protos_src",
     ],
 )
 
@@ -115,7 +115,7 @@ csharp_proto_src(
     name = "status_handler_cs",
     proto_src = "mediapipe/framework/status_handler.proto",
     deps = [
-        "@com_google_mediapipe//mediapipe/framework:protos_src",
+        "@com_google_mediapipe_patched//mediapipe/framework:protos_src",
     ],
 )
 
@@ -123,6 +123,6 @@ csharp_proto_src(
     name = "stream_handler_cs",
     proto_src = "mediapipe/framework/stream_handler.proto",
     deps = [
-        "@com_google_mediapipe//mediapipe/framework:protos_src",
+        "@com_google_mediapipe_patched//mediapipe/framework:protos_src",
     ],
 )

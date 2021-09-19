@@ -26,7 +26,7 @@ $(location @com_google_protobuf//:protoc) \
     --proto_path=. \
     --proto_path={outdir} \
     --proto_path=$$(pwd)/external/com_google_protobuf/src \
-    --proto_path=$$(pwd)/external/com_google_mediapipe \
+    --proto_path=$$(pwd)/external/com_google_mediapipe_patched \
     --csharp_out={outdir} {}
 mv {outdir}/{outfile} $$(dirname $(location {outfile}))
 """.format(proto_src, outdir=outdir, outfile=csharp_out),

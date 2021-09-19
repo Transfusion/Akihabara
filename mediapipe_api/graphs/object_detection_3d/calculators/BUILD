@@ -21,7 +21,7 @@ csharp_proto_src(
     name = "model_matrix_cs",
     proto_src = "mediapipe/graphs/object_detection_3d/calculators/model_matrix.proto",
     deps = [
-        "@com_google_mediapipe//mediapipe/graphs/object_detection_3d/calculators:protos_src",
+        "@com_google_mediapipe_patched//mediapipe/graphs/object_detection_3d/calculators:protos_src",
     ],
     import_prefix = "Graphs/ObjectDetection3d",
 )
